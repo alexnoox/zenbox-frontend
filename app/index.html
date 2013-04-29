@@ -4,7 +4,7 @@
     <title>Zen Factory</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 </head>
-<body>
+<body ng-controller="UserListCtrl">
 	<!-- barre de navigation -->
 	<header class="navbar">
 		<div class="navbar-inner">
@@ -19,7 +19,12 @@
 
 	<!-- partie principale -->
 	<section class="container">
-		<p>Nothing here {{'yet' + '!'}}</p>
+		<ul>
+			<li ng-repeat="user in users">
+				{{user.firstName}} {{user.lastName}}
+				<p>{{user.email}}</p>
+			</li>
+		</ul>
 	</section>
 
 	<!-- scripts -->
