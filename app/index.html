@@ -2,11 +2,11 @@
 <html ng-app>
 <head>
     <title>Zen Factory</title>
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
 <body ng-controller="UserListCtrl">
 	<!-- barre de navigation -->
-	<header class="navbar">
+	<header class="navbar navbar-inverse">
 		<div class="navbar-inner">
 			<section class="container">
 				<a class="brand" href="/">Zen Factory</a>
@@ -20,7 +20,7 @@
 	<!-- partie principale -->
 	<section class="container">
 		<ul>
-			<li ng-repeat="user in users">
+			<li ng-repeat="user in users | orderBy:orderProp">
 				{{user.firstName}} {{user.lastName}}
 				<p>{{user.email}}</p>
 			</li>
@@ -28,7 +28,8 @@
 	</section>
 
 	<!-- scripts -->
-	<script type="text/javascript" src="libs/angular/angular.min.js"></script>
-	<script type="text/javascript" src="libs/bootstrap-ui/ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap-ui/ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
 </body>
 </html>
