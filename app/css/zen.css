@@ -2,3 +2,7 @@ body {
 	padding-top: 60px;
 }
 
+.picture {
+    height: 64px;
+    width: 64px;
+}

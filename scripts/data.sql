@@ -1,0 +1,10 @@
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (1, 'mickey.mouse@disney.com', 'Mickey', 'MOUSE', 'minnieminnie', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367311822.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (2, 'minnie.mouse@disney.com', 'Minnie', 'MOUSE', 'mickeymickey', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367311844.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (3, 'donald.duck@disney.com', 'Donald', 'DUCK', 'daisydaisy', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367311924.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (5, 'mario@bros.com', 'Mario', 'BROS', 'itsmemario', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367312491.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (4, 'bart@simpson.com', 'Bart', 'SIMPSON', 'elbarto', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367313309.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (6, 'homer@simpson.com', 'Homer', 'SIMPSON', 'duff', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367313112.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (7, 'marge@simpson.com', 'Marge', 'SIMPSON', 'homerhomer', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367313124.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (8, 'maggie@simpson.com', 'Maggie', 'SIMPSON', 'killmrburns', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367313277.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (9, 'lisa@simpson.com', 'Lisa', 'SIMPSON', 'saxo', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367313265.png');
+INSERT INTO znuser (id, email, firstname, lastname, password, picture) VALUES (10, 'luigi@bros.com', 'Luigi', 'BROS', 'pizza', 'http://zenbox-demo.herokuapp.com/zenbox-demo/img/1367312544.png');
