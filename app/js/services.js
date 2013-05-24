@@ -1,7 +1,7 @@
-angular.module('zenbox.cordovaReady', []).
-    factory('cordovaReady', function() {
-  return function (fn) {
 
+myApp.factory('cordovaReady', function() {
+  return function (fn) {
+    console.log('### cordovaReady in');
     var queue = [];
 
     var impl = function () {
@@ -21,10 +21,10 @@ angular.module('zenbox.cordovaReady', []).
   };
 });
 
-angular.module('zenbox.geolocation', []).
-    factory('geolocation', function ($rootScope, cordovaReady) {
+myApp.factory('geolocationService', function ($rootScope, cordovaReady) {
   return {
-    getCurrentPosition: cordovaReady(function (onSuccess, onError, options) {
+    getCurrentPosition: function (onSuccess, onError, options) {
+      console.log('### geolocationService in');
       navigator.geolocation.getCurrentPosition(function () {
         var that = this,
           args = arguments;
@@ -45,6 +45,6 @@ angular.module('zenbox.geolocation', []).
         }
       },
       options);
-    })
+    }
   };
 });

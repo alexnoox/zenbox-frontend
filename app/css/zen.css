@@ -6,3 +6,15 @@ body {
     height: 64px;
     width: 64px;
 }
+
+#map_canvas img {
+  max-width: none;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.hidden {
+	visibility: hidden;
+}
