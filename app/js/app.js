@@ -1,9 +1,12 @@
-var myApp = angular.module('zenbox', ["google-maps"]);
+"use strict";
 
-myApp.config(['$routeProvider', function($routeProvider) {
+var app = angular.module('zenbox', ['google-maps', 'phonegapServices']);
+
+app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
         when('/users', {templateUrl: 'partials/user-list.html',   controller: UserListCtrl}).
         when('/users/:userId', {templateUrl: 'partials/user-detail.html', controller: UserDetailCtrl}).
         when('/geoloc', {templateUrl: 'partials/geoloc.html', controller: GeolocCtrl}).
+        when('/accelero', {templateUrl: 'partials/accelero.html', controller: AcceleroCtrl}).
         otherwise({redirectTo: '/users'});
 }]);
