@@ -75,4 +75,8 @@ function AcceleroCtrl($scope, accelerometerService) {
   console.log('### AcceleroCtrl out');
 }
 
-
+function NotificationCtrl($scope, notificationService) {
+  console.log('### NotificationCtrl in');
+  notificationService.alert('message', function () {alert('callback!')}, 'title', 'button name!');
+  console.log('### NotificationCtrl out');
+}
